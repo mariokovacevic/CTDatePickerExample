@@ -1,6 +1,6 @@
 language: swift # or objective-c
 osx_image: xcode10
 script:
-  - xcodebuild -scheme CTDatePickerExample -workspace CTDatePickerExample.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12' build
+  - xcodebuild -scheme CTDatePickerExample -workspace CTDatePickerExample.xcworkspace -sdk iphonesimulator build
 after_success:
   - bash <(curl -s https://codecov.io/bash)
